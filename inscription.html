@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription · DEDAL DES COULEURS</title>
+  <meta name="description" content="Inscrivez-vous gratuitement aux nouvelles de la galerie DEDAL DES COULEURS : nouvelles œuvres, expositions et vernissages.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <header class="entete">
+    <div class="conteneur">
+      <a class="logo" href="index.html" aria-label="DEDAL DES COULEURS, retour à l’accueil">
+        <img src="images/logo.svg" alt="" width="35" height="43">
+        <span><span class="logo-grand">Dedal</span>des couleurs</span>
+      </a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Navigation principale">
+        <ul class="menu" id="menu">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="galerie.html">La Galerie</a></li>
+        <li><a href="oeuvres.html">Les Oeuvres</a></li>
+        <li><a href="inscription.html" aria-current="page">Inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <div class="conteneur inscription">
+      <p class="surtitre">Inscription · Gardons le lien</p>
+      <section aria-labelledby="titre-inscription">
+        <h1 class="titre-xl" id="titre-inscription">Un peu d’art<br>dans votre<br>quotidien</h1>
+        <h2 class="rubrique">Ce que vous recevrez</h2>
+        <ul class="avantages">
+          <li><strong>Les nouvelles oeuvres</strong> · Un aperçu des toiles qui arrivent à la galerie, avant tout le monde.</li>
+          <li><strong>Les rendez-vous</strong> · Expositions, vernissages et invitations à venir rencontrer Paul à Paris.</li>
+          <li><strong>Un regard</strong> · Quelques lignes sur la peinture expressionniste et sur ce qui fait vibrer une œuvre.</li>
+        </ul>
+        <img class="inscription-image" src="images/inscription-nature-morte.jpg" alt="Nature morte peinte : pichet brun, poires jaunes et linge sur une table rouge" width="1200" height="670" loading="lazy">
+      </section>
+
+      <section class="formulaire-bloc" aria-labelledby="titre-formulaire">
+        <p class="surtitre">Inscription gratuite</p>
+        <h2 id="titre-formulaire">Un lien avec la galerie</h2>
+        <p class="texte-gris">Tous les champs sont obligatoires*.</p>
+        <form class="formulaire" id="formulaire" action="#" method="post">
+          <div class="formulaire-ligne">
+            <div class="champ">
+              <label for="nom">Nom *</label>
+              <input type="text" id="nom" name="nom" autocomplete="family-name" required>
+            </div>
+            <div class="champ">
+              <label for="prenom">Prénom *</label>
+              <input type="text" id="prenom" name="prenom" autocomplete="given-name" required>
+            </div>
+          </div>
+          <div class="champ">
+            <label for="email">Adresse e-mail *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+          <div class="consentement">
+            <input type="checkbox" id="consentement" name="consentement" required>
+            <label for="consentement">J’accepte de recevoir par e-mail les informations de DEDAL DES COULEURS sur les nouvelles œuvres et les expositions. *</label>
+          </div>
+          <button class="bouton fleche" type="submit">M’inscrire gratuitement</button>
+          <p class="message-envoi" id="message-envoi" aria-live="polite"></p>
+        </form>
+        <div class="confidentialite">
+          <h3>Vos coordonnées restent confidentielles</h3>
+          <p>Les informations demandées sont destinées à la galerie, uniquement pour vous adresser ses nouvelles. Vous pouvez retirer votre consentement ou demander l’accès, la rectification et la suppression de vos données en écrivant à <a href="mailto:dedal@gmail.com">dedal@gmail.com</a>.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied-grille">
+        <div>
+          <a class="logo" href="index.html" aria-label="DEDAL DES COULEURS, retour à l’accueil">
+            <img src="images/logo-clair.svg" alt="" width="35" height="43">
+            <span><span class="logo-grand">Dedal</span>des couleurs</span>
+          </a>
+          <p class="pied-devise">La peinture comme rencontre.</p>
+        </div>
+        <div>
+          <h2>Échanger avec la galerie</h2>
+          <p class="pied-nom">Paul DECHEWSKY</p>
+          <a class="pied-mail" href="mailto:dedal@gmail.com">dedal@gmail.com</a>
+          <p class="pied-petit">Tél. <a href="tel:+33163458556">01.63.45.85.56</a><br>Fax 01.63.45.78.52</p>
+        </div>
+        <div>
+          <h2>Nous retrouver</h2>
+          <address>10 RUE DE LA REPUBLIQUE<br>75000 PARIS</address>
+          <p class="pied-petit">Pour préparer votre visite, contactez Paul.</p>
+        </div>
+      </div>
+      <p class="pied-bas">DEDAL DES COULEURS · Paris &nbsp;&nbsp;/&nbsp;&nbsp; Maquette éditoriale — photographies et œuvres d’illustration, sans attribution.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
